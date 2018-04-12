@@ -5,6 +5,8 @@
 // e) ver quien mas votos y designarlo como ganador.
 
 
+///
+
 
 # include <stdio.h>
 	int main () { 
