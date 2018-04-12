@@ -33,19 +33,21 @@
 		scanf("%c", &final);
 	}
 		
-		total_votos = c1 + c2 + c3 + nulos;
-		printf("total_votos: %d", total_votos);
+	total_votos = c1 + c2 + c3 + nulos;
+	printf("total_votos: %d", total_votos);
 				
-	if ((c1>c2) && (c1>c3)){
+	if ((c1>c2) && (c1>=c3)){
 		printf("c1 gana");
 	}
 	
-	if  ((c2>c1)&&(c2>c3)){
-	printf("c2 gana ");
+	else if ((c2>c1)&&(c2>=c3)){
+		printf("c2 gana ");
 	}
-	
-	if ((c3>c1)&&(c3>c2)){
-	printf("c3 gana");
+	else if ((c3>c1)&&(c3>=c2)){
+		printf("c3 gana");
+	}
+	else{
+		printf("no se ha podido determinar, vayase a segunda vuelta");
 	}
 	return 0;
 }
